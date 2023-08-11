@@ -1,21 +1,26 @@
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://thesuburbansoapbox.com/about/";
+   let authorPhoto = "https://thesuburbansoapbox.com/wp-content/uploads/2021/02/nFMviV_w-e1614300721197-scaled-340x485.jpeg";
+   let authorName = "Kellie";
 
    return (
       <div>
          <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} />
          <div>
             <h3>{authorName}</h3>
-            <a href={authorLink}></a> 
+            <a href={authorLink}>Kellie's Website</a> 
          </div>
       </div>
    );
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = [
+   "4 cups all-purpose flour",
+   "1 cup whole milk",
+   "2 eggs, lightly beaten",
+   "1/4 cup sour cream",
+   "5 large russet potatoes, peeled and quartered"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -34,8 +39,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>Polish Potato Pierogi</h1>
+            <p>Tender dumplings filled with cheesy potato filling then topped with buttery sautéed onions, this is the comfort food of my childhood. The Best Potato and cheese Pierogi recipe is passed down from my grandfather and made completely from scratch is easier to make than you think.</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -47,7 +52,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://thesuburbansoapbox.com/wp-content/uploads/2021/09/Polish-Pierogies-3.jpg" alt="" className="imageUpdates"/>
    );
 }
 
